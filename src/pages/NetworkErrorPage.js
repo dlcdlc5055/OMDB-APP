@@ -8,7 +8,7 @@ export default function NetworkErrorPage({DarkMode}) {
     const LocalColor=DarkMode?colors.dark:colors.light
   return (
     <View style={{width:screenWidth,flex:1,justifyContent:"center",alignItems:"center",padding:35,backgroundColor:LocalColor.deleteBtnColor}}>
-        <Text style={{textAlign:"center",color:"#fff",fontSize:30}}>Please connect to the internet to use this App!`</Text>
+        <Text style={{textAlign:"center",color:"#fff",fontSize:30}}>Please connect to the internet to use this App!</Text>
     </View>
   )
 }
