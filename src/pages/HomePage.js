@@ -59,6 +59,7 @@ async function getRecomandedItems(data){
     let retValue=res.Search
     retValue=retValue.filter((it,i)=>!disliked.includes(it.imdbID))
     retValue=retValue.filter((it,i)=>it.Title!=data.like)
+    retValue=retValue.filter((it,i)=>!isPosterValid(it.Poster))
     return retValue
   }catch(e){
     return null
