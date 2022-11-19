@@ -23,7 +23,7 @@ export default function SearchPage({DarkMode}) {
     return (
         <View style={{width:screenWidth,flex:1}}>
             <View style={{width:screenWidth,padding:10,paddingVertical:15,paddingBottom:10,borderBottomWidth:1,borderBottomColor:LocalColor.borderColor}}>
-                <TextInput onChangeText={(text)=>{
+                <TextInput placeholder='Search For Entertaimment' onChangeText={(text)=>{
                     setInput(text)
                     const func=async ()=>{
                         setMoviesList(null)
